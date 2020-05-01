@@ -1,11 +1,9 @@
 import React from 'react';
-import './App.css';
-
-import Button from '@material-ui/core/Button';
 
 import {Helmet} from 'react-helmet';
+import SCAppBar from './components/SCAppBar';
 
-function App() {
+const App = () => {
   return (
     <div>
       <Helmet>
@@ -18,9 +16,7 @@ function App() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       </Helmet>
 
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
+      <SCAppBar></SCAppBar>
     </div>
   );
 }
